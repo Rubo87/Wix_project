@@ -1,14 +1,108 @@
 /* general styles */ 
 
-* {
-    
+
+
+
+*{
+
 }
 
 /*<!-----------header---------->*/
+header {
+  text-align: center;
 
+}
+
+header{
+  text-align: center;
+  padding: auto;
+}
+
+header h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  padding: 50px 0px 20px 0px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 116px;
+  padding-bottom: 30px;
+}
 /*<!-----------navbar---------->*/
 
+nav{
+border: .5px solid black;
+
+}
+
+
+
+
+.nav-bar-ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.nav-bar-li{
+  display: inline;
+  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-bar-li a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 15px;
+}
+
+.nav-bar-li-a-img{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.search-bar{
+  border: none;
+}
+
+.search-bar input[type=text]{
+  border: none;
+}
+
+
 /*<!-----------hero---------->*/
+
+
+.hero-img{
+width: 940px;
+height: 528.75px;
+object-fit: cover;
+display: block;
+margin: 0 auto ;
+}
+
+.hero-div{
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-left: ;
+
+}
+
+
 
 /*<!-----------subscribe---------->*/
 
