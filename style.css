@@ -1,5 +1,7 @@
 /* general styles */ 
-
+* { margin: 0 !important; 
+    padding: 0;
+}
 
 
 
@@ -136,7 +138,8 @@ td.t2 {
 }
 
 hr.hori {
-    width:50%;
+    width:90%;
+    margin:0 auto;
 
 }
 
@@ -206,7 +209,16 @@ div.footerp {
     display: flex;
     justify-content: center;
     font-size: small;
-    margin-top: 10px;
+    align-items: center;
+    padding: 10px 0;
 }
 
 /*<!-----------footer---------->*/
+
+
+/*<!-----
+
+
+
+
+----->*/
