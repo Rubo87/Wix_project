@@ -89,7 +89,9 @@ border: .5px solid black;
 
 
 /*<!-----------hero---------->*/
-
+.hero{
+  position:relative;
+}
 
 .hero-img{
 width: 940px;
@@ -101,10 +103,27 @@ margin: 0 auto ;
 
 .hero-div{
   border: 1px solid black;
-  margin-top: 100px;
   margin-left: 100px;
+  margin-top: 100px;
 
 }
+
+.over-div{
+  border: 1px solid black;
+  margin-left: 100px;
+  margin-top: -10px;
+  z-index: 10;
+  position: absolute;
+  top: -10px;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  padding: 10px;
+  
+  
+}
+
 
 
 
