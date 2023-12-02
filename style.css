@@ -156,27 +156,19 @@ td.t2 {
     padding: 20px;
 }
 
-hr.hori {
-    width:90%;
-    margin:0 auto;
 
-}
-
-/*<!-----------contact---------->*/
-
-section.contactus {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
+/*<!-----------contact form---------->*/
+.container-arrow {
+    display: block;
+    display: grid;
 }
 
 img.arrow {
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5%;
+    display: flex;
+    width: 4%;
+    justify-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .dropline {
@@ -186,15 +178,36 @@ img.arrow {
 div.container-form {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    color: rgb(96, 94, 94)
 }
+
+#fname, #lname, #email, #message {
+    border: none; /* Remove default border */
+    padding: 5px;
+}
+#fname {
+    width: 280px;
+}
+
+#lname {
+    width: 300px;
+}
+
+#email {
+    width: 100%;
+}
+#message {
+    resize: none;
+    width: 600px;
+  }
 
 div.containerf-1 {
     display: flex;
-    flex-direction: row;
-    align-items:center;
     justify-content: space-between;
     padding: 10px;
+    width: 100%;
+    
 }
 
 div.containerf-2 {
@@ -204,19 +217,45 @@ div.containerf-2 {
     padding-right: 10px;
 }
 
-div.mcontainer {
-    padding-top: 10px;
-}
-
 div.containerf-3 {
-    display:flex;
+    display: flex;
     justify-content: center;
+    margin: 100px !important;
 }
 
-.texta {
-    resize: none;
+.btn-submit {
+    background-color: #6600ea;
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
   }
 
+.btn-submit:hover {
+    background-color: black; 
+    transition:0.5s;
+}
+
+.form-containers {
+    border-bottom: 1px solid #000000; /* Apply bottom border */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-containers:hover {
+    border-bottom: 2px solid #6600ea; 
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+
+
+/*<!-----------footer---------->*/
 
 footer{
     background-color: #e8e6e6;
@@ -232,12 +271,31 @@ div.footerp {
     padding: 10px 0;
 }
 
-/*<!-----------footer---------->*/
 
+/*<!-----Responsiveness----->*/
 
-/*<!-----
+@media only screen and (min-width: 768px) {
+    footer {
+        width: 100%;
+}
+    div.footerp {
+        width: 100%;
+}
 
+    section.contactus {
+        width 100%;
+    }
+}
 
+@media only screen and (min-width: 375px) {
+    footer {
+        width: 100%;
+}
+    div.footerp {
+        width: 100%;
+    }
 
-
------>*/
+    section.contactus {
+        width 100%;
+}
+}
