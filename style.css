@@ -192,38 +192,43 @@ display: block;
   left: 0px;
   justify-self: start;
   align-self: start;
-   
 }
 .subscribe-button{
   align-self: flex-end;
 
 }
 
-
 /*<!-----------content---------->*/
 
 .container-main {
     display: flex;
     width: 100%; 
-    border-top: solid thin #000000;
     border-bottom: solid thin #000000;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin-top: 10px !important;
 }
 
 .container-main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
     width: 65%; 
     padding: 40px;
     border-right: solid thin #000000;
 }
 
 .container-main-right {
+    display: flex;
+    flex-direction: column;
     width: 35%; 
     padding: 40px;
 }
 
 .container-maki {
     display: flex;
+
     width: 450px;
     border: solid thin #000000;
 }
