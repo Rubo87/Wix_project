@@ -176,26 +176,31 @@ display: block;
 .subscribe-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 100px;
+  justify-content: space-around;
+  align-items:end;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 40px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
 }
+
 
 .subscribe-never{
   font-family: 'Playfair Display', serif;
 }
 
 .subscribe-email{
-  position: relative;
-  margin: 0px 0px 0px 0;
-  left: 0px;
-  justify-self: start;
-  align-self: start;
+  border-bottom: 1px solid #000000; /* Apply bottom border */
 }
-.subscribe-button{
-  align-self: flex-end;
 
+#email-subs {
+  width: 250px;
+}
+
+.subscribe-button {
+  padding: 10px 50px !important;
 }
 
 /*<!-----------content---------->*/
@@ -209,46 +214,85 @@ display: block;
     margin-top: 10px !important;
 }
 
+p.titles {
+  display: flex;
+  letter-spacing: 7px;
+  justify-content: left;
+}
+
 .container-main-left {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     gap: 20px;
     width: 65%; 
     padding: 40px;
     border-right: solid thin #000000;
 }
 
-.container-main-right {
-    display: flex;
-    flex-direction: column;
-    width: 35%; 
-    padding: 40px;
-}
-
 .container-maki {
     display: flex;
-
     width: 450px;
     border: solid thin #000000;
 }
 
+p.pdescription::after {
+  content: "...";
+}
+
+.pdescription {
+  font-size: 10pt;
+  padding-bottom: 30px;
+}
+
+.pdate {
+  font-size: 8pt;
+}
+
+div.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px 20px;
+}
+
+div.pfooter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pfooter p:last-of-type {
+  margin-left: auto !important;
+}
+
 img.maki {
-    width: 200px;
-    object-fit: contain;
-
+  width: 200px;
+  object-fit: cover;
 }
 
-.intro {
-    padding: 10px;
+#comm:hover, .intro h5:hover, .pdescription:hover, .intro a:hover, .intro a:focus{
+  color: #6600ea;
+  transition:0.5s;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
 
 /*-----left container----------*/
 
-p.titles {
-    letter-spacing: 7px;
-
+.container-main-right {
+  display: flex;
+  flex-direction: column;
+  width: 35%; 
+  padding: 40px ;
 }
+
 
 /*-----right container----------*/
 
@@ -278,7 +322,7 @@ div.container-form {
     color: rgb(96, 94, 94)
 }
 
-#fname, #lname, #email, #message {
+#fname, #lname, #email, #message, #email-subs {
     border: none; /* Remove default border */
     padding: 5px;
 }
@@ -341,7 +385,7 @@ div.containerf-3 {
     padding-bottom: 10px;
 }
 
-.form-containers:hover {
+.form-containers:hover, .subscribe-email:hover {
     border-bottom: 2px solid #6600ea; 
 }
 
@@ -369,6 +413,19 @@ div.footerp {
 
 
 /*<!-----Responsiveness----->*/
+
+@media only screen and (min-width: 1024px) {
+  footer {
+      width: 100%;
+}
+  div.footerp {
+      width: 100%;
+  }
+
+  section.contactus {
+      width 100%;
+}
+}
 
 @media only screen and (min-width: 768px) {
     footer {
