@@ -204,7 +204,7 @@ display: block;
 
 .subscribe-button {
   padding: 10px 50px !important;
-}
+
   margin: 0px 0px 0px 0;
   left: 0px;
   justify-self: start;
@@ -437,7 +437,7 @@ div.footerp {
   }
 
   section.contactus {
-      width 100%;
+      width: 100%;
 }
 }
 
@@ -450,7 +450,7 @@ div.footerp {
 }
 
     section.contactus {
-        width 100%;
+        width: 100%;
     }
 }
 
@@ -463,6 +463,6 @@ div.footerp {
     }
 
     section.contactus {
-        width 100%;
+        width: 100%;
 }
 }
