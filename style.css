@@ -176,10 +176,13 @@ display: block;
 .subscribe-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 100px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+  margin-left: auto;
+  
+
 }
 
 .subscribe-never{
@@ -187,16 +190,15 @@ display: block;
 }
 
 .subscribe-email{
-  position: relative;
   margin: 0px 0px 0px 0;
   left: 0px;
   justify-self: start;
-  align-self: start;
+  align-self: flex-end;
+  border-bottom: 1px solid #000000; /* Apply bottom border */
    
 }
 .subscribe-button{
-  align-self: flex-end;
-
+  align-self: center;
 }
 
 
