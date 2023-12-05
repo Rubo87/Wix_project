@@ -310,6 +310,136 @@ a {
 
 /*-----right container----------*/
 
+.container-main-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-main-right-one{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #000000;
+
+}
+
+
+.about-me-img {
+  border: 1px solid #000000;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about-me-p{
+  line-height: 1.6em;
+    font-size: 17px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.read-more-button{
+  background-color: white; 
+  border: none;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  align-self: flex-start;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.read-more-button:hover{
+  color: #6600ea;
+  transition:0.5s;
+}
+
+.Follow-me{
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+  align-self: flex-start;
+  
+  
+}
+
+.container-main-right-two{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 850px;
+}
+
+.container-img{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.img-instagram  {
+  height: 150px;
+  width: 150px;
+}
+.overlay-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container-img:hover .overlay-img {
+  opacity: .5;
+}
+
+.text-img {
+  
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.nav-bar-li-bottom{ 
+  display: inline;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.nav-bar-li-a-bottom-img{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+}
+
+.subscribe-subscribe-wrapper{
+  padding-top: 20px;
+  
+}
+
+
+
 
 /*<!-----------contact form---------->*/
 .container-arrow {
